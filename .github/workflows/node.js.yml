@@ -1,4 +1,4 @@
-name: My-first-iconi-app APK
+name: My-first-iconi-app 
 
 on:
   push:
@@ -21,13 +21,13 @@ jobs:
         node-version: 14
 
     - name: Install dependencies
-      run: yarn
+      run: npm run deploy
 
     - name: Build APK
-      run: yarn android:build
+      run: expo build:android
       env:
-        user_name: 'github-actions[bot]'
-        user_email: 'github-actions[bot]@users.noreply.github.com'
+        user_name: shubhamthombare
+        user_email: shubhamthombare0809@gmail.com
         github_token: ${{ secrets.ACTIONS_DEPLOY_ACCESS_TOKENS }}
         repository: ${{ github.repository }}
 
