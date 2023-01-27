@@ -32,7 +32,7 @@ jobs:
         repository: ${{ github.repository }}
 
     - name: Deploy APK
-      uses: actions/setup-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name:  My-first-iconi-app.apk
         path: app/build/outputs/apk/debug/app-My-first-iconi-app.apk
