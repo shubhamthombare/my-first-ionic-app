@@ -24,7 +24,7 @@ jobs:
       run: npm install
 
     - name: Build APK
-      run: expo build:android
+      run: npm run build
       env:
         user_name: shubhamthombare
         user_email: shubhamthombare0809@gmail.com
